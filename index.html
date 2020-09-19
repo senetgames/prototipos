@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>senet-pg</title>
+		<link rel="stylesheet" href="css/game.css">
+		<script src="script/levels.js"></script>
+		<script src="script/game.js"></script>
+	</head>
+	<body>
+	
+		<script>
+		
+			console.log("fast");
+		
+			//let simpleLevel = new Level(simpleLevelPlan);
+			//let display = new DOMDisplay(document.body, simpleLevel);
+			//display.syncState(State.start(simpleLevel));
+			
+			runGame(GAME_LEVELS, DOMDisplay);		
+						
+			function logInfo(w, h, l, t, obj){
+				var o = obj == "undefinde" || null ? 1 : obj;
+				
+				return console.log(`${o}-w:${w}/h:${h}/l:${l}/t:${t}`);
+			};
+			
+		</script>
+	</body>
+</html>
